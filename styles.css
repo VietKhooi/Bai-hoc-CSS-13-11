@@ -1,0 +1,38 @@
+body{
+    background-color: antiquewhite;
+    width: 880px;
+    height: 1100px;
+    padding: 80px;
+    border: 8px solid rgb(130, 238, 171);
+    margin: 0;
+}
+ol{
+
+    width: 680px;
+    height: 680px;
+    padding: 80px;
+    border: 8px solid violet;
+    margin: 0;
+}
+.efect{
+    text-align: center;
+    font-size: 50px;
+    color: #2c2c2c;
+    background-color: #d5d5d5;
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    padding-top: 40px;
+}
+#edit1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: red;
+    padding: 40px;
+    text-align: left;
+}
+.edit2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(160, 117, 25);
+}

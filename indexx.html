@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bao_tap_Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    table, th, td{
+        border: 3px solid rgb(248, 240, 240);
+        border-collapse: collapse;
+    }
+    th, td{
+        background-color: rgb(109, 124, 119);
+        width: 1000px;
+        height: 30px;
+    }
+</style>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2">PHIEU DANG KY THAM GIA CHUONG TRINH KHUYEN MAI</th>
+        </tr>
+        
+        <tr>
+            <th id="edit1">Ho ten</th>
+            <td>
+                <input type="text" id="fname" name="firstname" placeholder="Nhap ho ten">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Dia chi</th>
+            <td>
+                <input type="text" id="dchi" name="diachi" placeholder="Nhap dia chi">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Dien thoai</th>
+            <td>
+                <input type="text" id="sdt" name="sodienthoai" placeholder="Nhap so dien thoai">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Gioi tinh</th>
+            <td>Nam:<input type="radio">
+                Nu:<input type="radio"></td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="country">Nghe nghiep</label></th>
+            <td>
+                <select name="country" id="country">
+                    <option value="None">None</option>
+                    <option value="congan">Cong an</option>
+                    <option value="bacsi">Bac si</option>
+                    <option value="congnhan">Cong nhan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="sanpham">Chon san pham</label></th>
+            <td>
+                <select name="sanpham" id="sanpham">
+                    <option value="None">None</option>
+                    <option value="kemdanhrang">Kem danh rang</option>
+                    <option value="banchai">Ban chai</option>
+                    <option value="khan">Khan mat</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="chon">So nguoi du doan</label></th>
+            <td>
+                <select name="chon" id="chon">
+                    <option value="None">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="submit" value="Dong y"></th>
+        </tr>
+    </table>
+    
+</body>
+</html>

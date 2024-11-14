@@ -3,59 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai_hoc_CSS</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Bao_tap_Form</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<style>
+    table, th, td{
+        border: 3px solid rgb(248, 240, 240);
+        border-collapse: collapse;
+    }
+    th, td{
+        background-color: rgb(109, 124, 119);
+        width: 1000px;
+        height: 30px;
+    }
+</style>
 <body>
-    <h2 class="efect">Các kiến thức đã học trong ngày 13/11</h2>
-    <ol>
-        <div id="edit1">
-            <li>Tạo file CSS</li>
-            <li>Nhúng CSS vào HTML</li>
-            <li>Tạo Background color/ Text color từ CSS</li>
-            <li>Chọn Font chữ và căn chỉnh Font chữ</li>
-            <li>Căn lề chủ đề, căn lề chữ(Margin)</li>
-            <li>Căn lề riêng lẻ, căn lề theo thuộc tính viết tắt</li>
-            <li>Tạo các kiểu đường viền (Boder-style)</li>
-            <li>Tạo khoảng trống xung quanh phần tử, bên trong bất kỳ đường viền nào (Padding)</li>
-            <li>Tạo khoảng trống theo các mặt riêng biệt</li>
-            <li>Tạo khoảng trống theo thuộc tính viết tắt</li>
-            <li>Thiết lập chiều cao, chiều rộng trong CSS (Height/Width)</li>
-            <li>Giá trị của chiều cao và chiều rộng</li>
-            <li>Thiết lập mô hình hình hộp (Box-Model)
-                <div class="edit2">
-                    <ul>Content: Nội dung của hộp</ul>
-                    <ul>Padding: Đệm trong suốt xóa một vùng quanh Content</ul>
-                    <ul>Border: Đường viền quanh Padding và Content</ul>
-                    <ul>Margin: Lề trong suốt xóa một vùng bên ngoài đường viền</ul>          
-                </div>           
-                
-            </li>
-            <li>Thiết lập chiều rộng và chiều cao của một phần tử trong Box-Model</li>
-            <li>Muốn thay đổi một nội dung mà không muốn trùng nhau với nội dung khác thì dùng "id"
-                <div class="edit2">
-                    <ul>* Nguyên tắc: "id" luôn luôn phải là duy nhất</ul>
-                    <ul>- Trước một phần tử phải có "#"</ul>
-                    <ul>- Gán phần tử có "#" vào "id" để thay đổi một nội dung cần thay đổi
-                        <ul>VD: #para1{<"Các lệnh thay đổi cho nội dung">}
-                            <ul>'<'p id="para1"  '>'   hello  '<'/p'>'</ul>
-                        </ul>
-                    </ul>   
-                </div>         
-               
-            </li>
-            <li>Muốn thay đổi nội dung mà được phép trùng các nội dung với nhau thì dùng "Class"
-                <div class="edit2">
-                    <ul>* Nguyên tắc: Class thì được phép trùng nhau khi sử dụng trong HTML còn "id" thì không</ul>
-                    <ul>- Trước một phần tử khi sử dụng "Class" thì phải có dấu "." trước một phần tử</ul>
-                    <ul>- Gán phần tử có "." vào "Class"
-                        <ul>VD: ( .red-text{//Lệnh thay đổi} )
-                            <ul>'<'p class="red-text" '>' Hello '<'/p'>'</ul>
-                        </ul>
-                    </ul>
-                </div>           
-            </li>    
-        </div>     
-    </ol>
+
+    <table>
+        <tr>
+            <th colspan="2">PHIEU DANG KY THAM GIA CHUONG TRINH KHUYEN MAI</th>
+        </tr>
+        
+        <tr>
+            <th id="edit1">Ho ten</th>
+            <td>
+                <input type="text" id="fname" name="firstname" placeholder="Nhap ho ten">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Dia chi</th>
+            <td>
+                <input type="text" id="dchi" name="diachi" placeholder="Nhap dia chi">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Dien thoai</th>
+            <td>
+                <input type="text" id="sdt" name="sodienthoai" placeholder="Nhap so dien thoai">
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1">Gioi tinh</th>
+            <td>Nam:<input type="radio">
+                Nu:<input type="radio"></td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="country">Nghe nghiep</label></th>
+            <td>
+                <select name="country" id="country">
+                    <option value="None">None</option>
+                    <option value="congan">Cong an</option>
+                    <option value="bacsi">Bac si</option>
+                    <option value="congnhan">Cong nhan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="sanpham">Chon san pham</label></th>
+            <td>
+                <select name="sanpham" id="sanpham">
+                    <option value="None">None</option>
+                    <option value="kemdanhrang">Kem danh rang</option>
+                    <option value="banchai">Ban chai</option>
+                    <option value="khan">Khan mat</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th id="edit1"><label for="chon">So nguoi du doan</label></th>
+            <td>
+                <select name="chon" id="chon">
+                    <option value="None">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2"><input type="submit" value="Dong y"></th>
+        </tr>
+    </table>
+    
 </body>
 </html>
